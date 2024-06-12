@@ -8,12 +8,17 @@ namespace flowerdatabase
    
     public class flowercontext : DbContext
     {
-        public DbSet<flowers> MyProperty { get; set; }
+        public flowercontext(DbContextOptions<flowercontext> options) :
+              base(options);
+
+
+        public DbSet<flowers> flowers { get; set; }
+
         public DbSet<customer> customers { get; set; }
-
-
 
 
     }
 
 }
+
+
