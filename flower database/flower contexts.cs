@@ -4,16 +4,30 @@ using Microsoft.EntityFrameworkCore;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace flowerdatabase
+
 {
    
     public class flowercontext : DbContext
+
     {
-        public DbSet<flowers> MyProperty { get; set; }
-        public DbSet<customer> customers { get; set; }
 
 
+
+        public flowercontext(DbContextOptions<flowercontext> options) :
+            base(options)
+
+        {
+
+        }
+
+      
+
+                public DbSet<flowers> flowerss { get; set; }
+                public DbSet<customer> customers { get; set; }
 
 
     }
 
 }
+
+
