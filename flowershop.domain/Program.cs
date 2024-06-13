@@ -1,10 +1,9 @@
-using flowershop.domain.Components;
+using flowershop.domain.
 using flowershop.domain.flowershop;
 
 var builder = WebApplication.CreateBuilder(args);
-
-object value = builder.Services.AddDbContextFactory<flowers>(option =>
-Option.UseSqlServer(builder.Configuration.GetConnectionString("DBConnection")));
+builder.Services.AddDbContextFactory<flowercontext>(Options =>
+Options.UseSqlServer(connectionString: "Server=.\\sqlexpress;Database=flowersDb;Trusted_Connection=True;"));
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
