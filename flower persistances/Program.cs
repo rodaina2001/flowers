@@ -1,11 +1,6 @@
-using flowershop.domain.flowershop; 
-using flowershop.domain.flowershop;
-using Microsoft.EntityFrameworkCore.Storage;
+using flower_persistances.Components;
 
 var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddDbContextFactory<flowercontext>(Options =>
-Options.UseSqlServer(builder.Configuration.GetConnectionString("DBConnection")));
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
