@@ -20,7 +20,6 @@ namespace flowerdatabase
 
         }
 
-      
 
                 public DbSet<flowers> flowerss { get; set; }
                 public DbSet<customer> customers { get; set; }

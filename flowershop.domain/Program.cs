@@ -1,8 +1,8 @@
-using flowershop.domain.
+using flowershop.domain.flowershop; 
 using flowershop.domain.flowershop;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContextFactory<flowercontext>(Options =>
+object value = builder.Services.AddDbContextFactory<flowercontext>(Options =>
 Options.UseSqlServer(connectionString: "Server=.\\sqlexpress;Database=flowersDb;Trusted_Connection=True;"));
 
 // Add services to the container.
@@ -24,7 +24,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAntiforgery();
 
-app.MapRazorComponents<App>()
+app.MapRazorComponents<APP>()
     .AddInteractiveServerRenderMode();
 
 app.Run();
