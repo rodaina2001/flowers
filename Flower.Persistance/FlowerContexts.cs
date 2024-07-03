@@ -1,5 +1,7 @@
-﻿using flowershop.domain.flowershop;
+﻿using System.ComponentModel.DataAnnotations;
+using flowershop.domain.flowershop;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace flowerdatabase
 {
@@ -17,11 +19,18 @@ namespace flowerdatabase
 
             modelBuilder.Entity<flowers>()
                 .Property(x => x.Name)
-                .HasMaxLength(maxLength: 60);
+                .HasMaxLength(maxLength: 60)
+                .IsRequired(required: true);
 
             modelBuilder.Entity<flowers>()
                .Property(x => x.Color)
                .HasMaxLength(maxLength: 60);
+
+            modelBuilder.Entity<flowers>()
+                .Property(x => x.Color)
+                .HasColumnType(typeName: "smallInt");
+
+         
         }
     } }
 

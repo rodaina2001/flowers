@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flower.Domain", "Flower.Domain\Flower.Domain.csproj", "{2EC6C371-C58F-4A1D-9EF9-9BD6A70173B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flower.Domain", "Flower.Domain\Flower.Domain.csproj", "{2EC6C371-C58F-4A1D-9EF9-9BD6A70173B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flower.Persistance", "Flower.Persistance\Flower.Persistance.csproj", "{BF5F58E9-B912-42A9-9556-B7B4E579F38E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flower.Persistance", "Flower.Persistance\Flower.Persistance.csproj", "{BF5F58E9-B912-42A9-9556-B7B4E579F38E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flower.UI", "Flower.UI\Flower.UI.csproj", "{313DA5E9-25A8-486D-80F6-A3889377F66C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flower.UI", "Flower.UI\Flower.UI.csproj", "{313DA5E9-25A8-486D-80F6-A3889377F66C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
